@@ -7,7 +7,21 @@
     <link href="style.css" type="stylesheet">      
     </head>
     <body>
-	    <script src="script.js"></script>
+	    <script>
+	    
+	function display(val){
+        	document.getElementById('textHolder').value+=val;
+      	}
+
+      	function cal(){
+        	var x = document.getElementById('textHolder').value;
+        	var y = eval(x);
+        	document.getElementById('textHolder').value = y;
+      	}
+      	function clr(){
+        	document.getElementById('textHolder').value = " ";
+      	}
+	    </script>
 	<div class="grid-container">
             <input type="text" id="textHolder">
             <button class="btn" onclick="display('(')" id="brack1">(</button>
