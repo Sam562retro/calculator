@@ -1,12 +1,12 @@
-      function display(val){
-        document.getElementById('screen').value+=val;
+function display(val){
+        document.getElementById('textHolder').value+=val;
       }
 
-      function solve(){
-        var x = document.getElementById('screen').value;
+      function cal(){
+        var x = document.getElementById('textHolder').value;
         var y = eval(x);
-        document.getElementById('screen').value = y;
+        document.getElementById('textHolder').value = y;
       }
       function clr(){
-        document.getElementById('screen').value = " ";
+        document.getElementById('textHolder').value = " ";
       }
