@@ -4,7 +4,104 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <link href="style.css" type="stylesheet">      
+    <style>
+	    body{
+              text-align: center;
+          }
+          .grid-container {
+              border: solid 6px lightGrey;
+              padding: 25px;
+              border-radius: 50px;
+              width: 650px;
+              display: grid;
+              grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+              grid-template-rows:1fr 1fr 1fr 1fr;
+              grid-template-areas:
+                      "t t t t c c"
+                      "brack1 brack2 one two plus min"
+                      "three four five six mul div"
+                      "seven eight nine zero equal p"
+          ;
+          }
+          .btn{
+              background-color: lightgray;
+              border: solid 2px lightgray;
+              margin: 2px;
+              border-radius: 50px;
+              height: 50px;
+              font: 30px "Myanmar Text";
+          }
+          .btn:hover{
+              cursor: pointer;
+              background-color: grey;
+          }
+          #brack1{
+              grid-area: brack1;
+          }
+          #brack2{
+              grid-area: brack2;
+          }
+          #one{
+              grid-area: one;
+          }
+          #two{
+              grid-area: two;
+          }
+          #three{
+              grid-area: three;
+          }
+          #four{
+              grid-area: four;
+          }
+          #five{
+              grid-area: five;
+          }
+          #six{
+              grid-area: six;
+          }
+          #seven{
+              grid-area: seven;
+          }
+          #eight{
+              grid-area: eight;
+          }
+          #nine{
+              grid-area: nine;
+          }
+          #zero{
+              grid-area: zero;
+          }
+          #equalTwo{
+              grid-area: equal;
+          }
+          #plus{
+              grid-area: plus;
+          }
+          #minus{
+              grid-area: min;
+          }
+          #mul{
+              grid-area: mul;
+          }
+          #div{
+              grid-area: div;
+          }
+          #point{
+              grid-area: p;
+          }
+          #textHolder{
+              grid-area: t;
+              border: solid 2px grey;
+              border-radius: 50px;
+              font: 25px "Myanmar Text";
+          }
+          #clear{
+              grid-area: c;
+          }
+          *{
+              outline: none;
+          }
+	  </style>
     </head>
     <body>
 	    <script>
